@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/cbFever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiebre" />
+
+        <CheckBox
+            android:id="@+id/cbCough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tos" />
+
+        <CheckBox
+            android:id="@+id/cbBreath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dificultad para respirar" />
+
+        <CheckBox
+            android:id="@+id/cbLoss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pérdida de olfato/gusto" />
+
+        <CheckBox
+            android:id="@+id/cbSore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolor de garganta" />
+
+        <CheckBox
+            android:id="@+id/cbFatigue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fatiga" />
+
+        <CheckBox
+            android:id="@+id/cbComorbidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tengo comorbilidades (diabetes, hipertensión, etc.)" />
+
+        <Button
+            android:id="@+id/btnEvaluate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evaluar" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nivel de riesgo: -"
+            android:paddingTop="12dp" />
+
+        <Button
+            android:id="@+id/btnCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Llamar a EPS"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar correo a EPS"
+            android:enabled="false" />
+
+    </LinearLayout>
+</ScrollView>
