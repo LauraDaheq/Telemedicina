@@ -1,17 +1,26 @@
-# Telemedicina — Symptom Checker (Android, Java)
+# Telemedicine — Symptom Checker (Android, Java)
 
-Aplicación Android básica (esqueleto) para evaluación de síntomas relacionados con COVID-19 y contacto con la EPS correspondiente. Esta versión es un prototipo educativo: NO sustituye el diagnóstico médico.
+A basic Android application (prototype) for assessing COVID-19-related symptoms and providing contact information for the corresponding Health Insurance Provider (EPS). This version is intended for educational purposes only and **does not replace professional medical diagnosis or advice**.
 
-Características:
-- Cuestionario de síntomas (fiebre, tos, dificultad respiratoria, pérdida de olfato/gusto, dolor de garganta, fatiga).
-- Evaluador de riesgo (bajo/medio/alto) según puntuación simple.
-- Mapeo EPS → contacto (teléfono y email) desde assets/eps.json.
-- Opciones para marcar llamada o enviar correo al contacto de la EPS vía intents.
+## Features
 
-Cómo usar
-1. Abrir el proyecto en Android Studio.
-2. Rellenar `app/src/main/assets/eps.json` con los contactos reales de las EPS.
-3. Ejecutar la app en un dispositivo físico o emulador.
+- Symptom questionnaire including:
+  - Fever
+  - Cough
+  - Shortness of breath
+  - Loss of smell or taste
+  - Sore throat
+  - Fatigue
+- Risk assessment (Low / Medium / High) based on a simple scoring system.
+- EPS contact mapping (phone number and email) loaded from `assets/eps.json`.
+- One-tap options to call or email the corresponding EPS using Android intents.
 
-Aviso legal
-Este proyecto es educativo y no ofrece diagnóstico. Siempre seguir las indicaciones de las autoridades sanitarias y profesionales de la salud.
+## Getting Started
+
+1. Open the project in **Android Studio**.
+2. Update `app/src/main/assets/eps.json` with the actual contact information for the corresponding EPS providers.
+3. Build and run the application on a physical Android device or an emulator.
+
+## Disclaimer
+
+This project was developed for educational purposes only and is **not intended to provide medical diagnosis or treatment**. Always consult qualified healthcare professionals and follow the recommendations of local health authorities.
